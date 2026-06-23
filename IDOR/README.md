@@ -1,9 +1,3 @@
-Əlbəttə! Sənədləri və Holberton metodologiyasını tamamilə Azərbaycan dilinə uyğunlaşdıraraq, birbaşa GitHub-a yerləşdirə biləcəyin şəkildə Markdown formatında hazırladım.
-
-Sabahkı imtahan üçün tam praktiki və sürətli komandalardan ibarət **IDOR Eksploytasiya Qeydləri (Cheat Sheet)**:
-
----
-
 ```markdown
 # 🛡️ IDOR (Insecure Direct Object Reference) Eksploytasiya Qeydləri
 
