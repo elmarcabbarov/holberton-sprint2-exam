@@ -1,7 +1,3 @@
-Məqaləni tam ətraflı, dərinliyinə qədər və imtahanda qarşına çıxa biləcək bütün ssenariləri (Verbose, Blind, Time-based, OOB və Filter Bypass-lar) əhatə edəcək şəkildə hazırladım. Holberton imtahanlarında filtrləri keçmək (Bypass) xüsusilə kritik rol oynayır, ona görə də bu hissəni maksimum geniş saxladım.
-
-Budur, GitHub-a birbaşa yerləşdirə biləcəyin **Komanda İnleksiyası (Command Injection) Magistr Qeydləri**:
-
 ---
 
 ```markdown
