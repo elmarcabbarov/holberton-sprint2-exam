@@ -2,6 +2,7 @@
 
 Bu sənəd veb server (Apache/Nginx) və sistem loglarını analiz etmək, zərərli hücumları (SQLi, LFI, XSS) tapmaq və kiber təhlükəsizlik insidentlərini araşdırmaq üçün Linux komanda sətri (CLI) alətlərini əhatə edir.
 
+(* cut -d' ' -f1 users > usernames)
 ---
 
 ## 🛠️ 1. Əsas Log Analiz Komandaları (Core Tools)
